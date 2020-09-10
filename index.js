@@ -42,3 +42,41 @@ $("h1").prepend("<button>new</button>");
 $("h1").append("<button>new</button>");
 
 //$("button").remove();  (To remove the selected element)
+
+//Adding animation using jquery
+
+// $("button").click(function() {
+//     $("h1").hide();
+// });
+
+//$("h1").show();
+
+$("button").click(function() {
+    $("h1").toggle();
+});
+
+$("button").click(function() {
+    $("h1").fadeOut();
+});
+
+//$("h1").fadeOut();
+//$("h1").fadeToggle();
+
+$("button").click(function() {
+    $("h1").slideUp();
+});
+
+//$("h1").slideDown();
+//$("h1").slideToggle();
+
+//To add user animation
+
+$("button").mouseover(function() {
+    $("h1").animate({ opacity: 0.3 });
+});
+
+//To add multiple animation
+
+$("button").click(function() {
+    $("h1").slideUp().slideDown().animate({ margin: "20%" });
+});
