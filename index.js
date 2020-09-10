@@ -9,3 +9,8 @@ $("h1").removeClass("margin-50");
 $("h1").text("bye");
 $("h1").html("<em>bye</em>");
 $("button").html("<strong> Don 't Click Me</strong>")
+
+//Manipulating attributes on fly using jquery
+
+$("h1").attr("class"); // "big-title" (Getting attribute)
+$("a").attr("href", "https://www.yahoo.com"); //Setting attribute
